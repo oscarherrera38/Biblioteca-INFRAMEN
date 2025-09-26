@@ -1,0 +1,135 @@
+/* ====== General ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7c1f1f;
+  padding: 15px 40px;
+}
+
+header .logo-img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+/* ====== Catálogo ====== */
+.catalogo .categoria {
+  margin: 30px 20px;
+}
+
+.catalogo .categoria h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ====== Libros (carrusel horizontal opcional) ====== */
+.libros {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.libro {
+  flex: 0 0 200px; /* ancho fijo por libro */
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.libro h3 {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* ====== Carrusel interno del libro ====== */
+.carrusel-libro {
+  position: relative;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.carrusel-libro img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: none; /* todas ocultas al inicio */
+}
+
+.carrusel-libro img:first-child {
+  display: block; /* muestra la primera */
+}
+
+/* ====== Botón de préstamo ====== */
+.btn-prestar {
+  background-color: #1d3c91;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.btn-prestar:hover {
+  background-color: #152d6e;
+}
+
+/* ====== Scroll horizontal bonito ====== */
+.libros::-webkit-scrollbar {
+  height: 8px;
+}
+
+.libros::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.libros::-webkit-scrollbar-thumb {
+  background: #7c1f1f;
+  border-radius: 4px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .libros {
+    gap: 15px;
+  }
+  .libro {
+    flex: 0 0 150px;
+  }
+}
