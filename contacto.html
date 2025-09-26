@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Catálogo</title>
+  <link rel="stylesheet" href="style-catalogo.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="Logo Biblioteca" class="logo-img"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Catálogo -->
+  <main class="catalogo">
+    <!-- Ejemplo categoría: Ciencia -->
+    <section class="categoria">
+      <h2>Ciencia</h2>
+      <div class="libros">
+        <!-- Libro 1 -->
+        <div class="libro">
+          <div class="carrusel-libro">
+            <img src="img/ciencia1-1.jpg" alt="Página 1">
+            <img src="img/ciencia1-2.jpg" alt="Página 2">
+            <img src="img/ciencia1-3.jpg" alt="Página 3">
+            <img src="img/ciencia1-4.jpg" alt="Página 4">
+          </div>
+          <h3>Química General - Bruni</h3>
+          <button class="btn-prestar" data-titulo="Química General - Bruni">Prestar</button>
+        </div>
+        <!-- Libro 2 -->
+        <div class="libro">
+          <div class="carrusel-libro">
+            <img src="img/ciencia2-1.jpg" alt="Página 1">
+            <img src="img/ciencia2-2.jpg" alt="Página 2">
+            <img src="img/ciencia2-3.jpg" alt="Página 3">
+            <img src="img/ciencia2-4.jpg" alt="Página 4">
+          </div>
+          <h3>La Planta Viviente</h3>
+          <button class="btn-prestar" data-titulo="La Planta Viviente">Prestar</button>
+        </div>
+        <!-- Puedes agregar los 4 libros restantes igual -->
+      </div>
+    </section>
+
+    <!-- Agrega más categorías igual: Matemática, Sociales, etc. -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Biblioteca Escolar</p>
+  </footer>
+
+  <script src="APP/catalogo.js"></script>
+</body>
+</html>

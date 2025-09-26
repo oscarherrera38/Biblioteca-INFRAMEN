@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Libros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Actividades</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalogo">
+    <h1>Catálogo de Libros</h1>
+
+    <!-- ======== CIENCIA ======== -->
+    <section class="categoria">
+      <h2>Ciencia</h2>
+      <div class="grid-libros">
+        
+        <div class="libro">
+          <div class="mini-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="mini-carousel-images">
+              <img src="IMG/quimica1.jpg" alt="Química General BRUNI pág 1">
+              <img src="IMG/quimica2.jpg" alt="Química General BRUNI pág 2">
+              <img src="IMG/quimica3.jpg" alt="Química General BRUNI pág 3">
+              <img src="IMG/quimica4.jpg" alt="Química General BRUNI pág 4">
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+          <h3>Química General BRUNI</h3>
+          <button>Préstamo</button>
+        </div>
+
+        <div class="libro">
+          <div class="mini-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="mini-carousel-images">
+              <img src="IMG/planta1.jpg" alt="La Planta Viviente pág 1">
+              <img src="IMG/planta2.jpg" alt="La Planta Viviente pág 2">
+              <img src="IMG/planta3.jpg" alt="La Planta Viviente pág 3">
+              <img src="IMG/planta4.jpg" alt="La Planta Viviente pág 4">
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+          <h3>La Planta Viviente</h3>
+          <button>Préstamo</button>
+        </div>
+
+        <!-- Repite igual para Zoología y Física -->
+      </div>
+    </section>
+
+    <!-- ======== MATEMÁTICA ======== -->
+    <section class="categoria">
+      <h2>Matemática</h2>
+      <div class="grid-libros">
+        <!-- Ejemplo Álgebra -->
+        <div class="libro">
+          <div class="mini-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="mini-carousel-images">
+              <img src="IMG/algebra1.jpg" alt="Álgebra pág 1">
+              <img src="IMG/algebra2.jpg" alt="Álgebra pág 2">
+              <img src="IMG/algebra3.jpg" alt="Álgebra pág 3">
+              <img src="IMG/algebra4.jpg" alt="Álgebra pág 4">
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+          <h3>Álgebra Trigonométrica</h3>
+          <button>Préstamo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SOCIALES ======== -->
+    <section class="categoria">
+      <h2>Sociales</h2>
+      <div class="grid-libros">
+        <!-- Ejemplo Historia -->
+        <div class="libro">
+          <div class="mini-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="mini-carousel-images">
+              <img src="IMG/historia1.jpg" alt="Historia pág 1">
+              <img src="IMG/historia2.jpg" alt="Historia pág 2">
+              <img src="IMG/historia3.jpg" alt="Historia pág 3">
+              <img src="IMG/historia4.jpg" alt="Historia pág 4">
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+          <h3>Historia General de América Latina</h3>
+          <button>Préstamo</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
